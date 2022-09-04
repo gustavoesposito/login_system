@@ -1,4 +1,5 @@
 import { Row } from "antd"
+import { Col } from "antd/lib/grid"
 import React from "react"
 
 export const Login = () => {
@@ -10,6 +11,10 @@ export const Login = () => {
             height:'100vh '
         }}
         >
+
+            <Col span={12}>
+                
+            </Col>
            
         </Row>
     )
