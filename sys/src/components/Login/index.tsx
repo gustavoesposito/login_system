@@ -39,13 +39,15 @@ export const Login = () => {
                     <Form.Item
                     wrapperCol={{ offset: 8, span: 16}}
                     >
-                        <Button type="primary" >
+                        <Button 
+                        type="primary"
+                        htmlType="submit"
+                         >
+                            Sign In
 
                         </Button>
-
-                    </Form.Item>
-
-                </Form>
+                        </Form.Item>
+                        </Form>
             </Col>
            
         </Row>
