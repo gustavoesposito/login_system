@@ -8,7 +8,7 @@ export const ProtectedLayout = (   ) => {
 
     if(!auth.email){
         return (
-            <h1>Você não tem acesso</h1>
+            <h1>Você não tem acesso à página</h1>
         )
     }
 

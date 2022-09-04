@@ -11,12 +11,12 @@ function App() {
      <AuthProvider>
        <BrowserRouter>
       <Routes>
-       <Route path='/' element={<ProtectedLayout/>}>
+       <Route path='/' element={App}>
         <Route path='/profile' element={<ProtectedLayout/>}>
-          <h1>Olá esse é o componente profile</h1>
+         
         </Route>
         <Route path='/login' element={<Login/>}>
-          
+
         </Route>
        </Route>
       </Routes>
