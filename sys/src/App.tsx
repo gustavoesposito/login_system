@@ -11,7 +11,9 @@ function App() {
        <BrowserRouter>
       <Routes>
        <Route path='/' element={<ProtectedLayout/>}>
-        <Route 
+        <Route path='/profile' element={<ProtectedLayout/>}>
+          <h1>Olá esse é o componente profile</h1>
+        </Route>
        </Route>
       </Routes>
     </BrowserRouter>
