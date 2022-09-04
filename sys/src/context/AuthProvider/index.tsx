@@ -14,10 +14,12 @@ async function authenticate(email: string, password: string ) {
 
     const payload = {token: response.token, email}
 
+    setUser(payload)
+
 }
 
 function logout (){
-
+setUser(null)
 }
 
 return (
