@@ -12,7 +12,7 @@ export const Login = () => {
    async  function onFinish (values: {email: string, password:string}) {
 
     try{
-   auth.authenticate(values.email, values.password)
+   await auth.authenticate(values.email, values.password)
     } catch (error){
       message.error('Invalid email or password')
     }
