@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { getLocalStorage } from '../context/AuthProvider/util';
 
 export const api = axios.create ({
     baseURL: "https://reqres.isn/api/",
@@ -6,7 +7,12 @@ export const api = axios.create ({
 
 
 api.interceptors.request.use(
-    (config) => {},
+    (config) => {
+       const user = getLocalStorage()
+
+      
+   
+},
     (error) => {
         return Promise.reject(error)
     }
