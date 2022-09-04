@@ -13,6 +13,8 @@ export const Login = () => {
 
     try{
    await auth.authenticate(values.email, values.password)
+
+   
     } catch (error){
       message.error('Invalid email or password')
     }
@@ -33,7 +35,7 @@ export const Login = () => {
                 name="bascic"
                 labelCol={{span: 8}}
                 wrapperCol={{span: 16 }}
-                onFinish ={() => {}}
+                onFinish ={onFinish}
                 >
                     <Form.Item
                     label= 'Email'
